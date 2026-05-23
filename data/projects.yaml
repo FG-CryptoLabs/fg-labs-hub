@@ -1,0 +1,166 @@
+orgs:
+  - name: FG-CryptoLabs
+    description: DeFi tooling and crypto analytics
+    color: "#6366f1"
+    projects:
+      - id: pendle-analyzer
+        name: Pendle Fixed APY Analyzer
+        repo: FG-CryptoLabs/pendle-analyzer
+        description: >
+          Explanation-first fixed-yield recommendation engine for Pendle Finance.
+          Fetches live market data, calculates net APY after all fees, and ranks
+          Principal Token positions by risk-adjusted yield with full transparent reasoning.
+        stack: ["Python", "MCP", "SQLite", "Claude API", "Typer"]
+        status: active
+        stage: "Stage 1 — Personal tool"
+        health_url: ""
+        docs_url: ""
+
+  - name: FG-CryptHub
+    description: Crypto portfolio tracking
+    color: "#0ea5e9"
+    projects:
+      - id: fg-crypt-core
+        name: FG Crypt Core
+        repo: FG-CryptHub/fg-crypt-core
+        description: >
+          Backend core for the FG-CryptHub crypto tracking suite.
+          Owns the data store, portfolio XIRR calculations, and HTTP API for the dashboard.
+        stack: ["Python", "FastAPI", "BigQuery", "GCS", "Firebase Auth", "Pydantic"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+  - name: FG-CollectLabs
+    description: Trading card market analysis and tools
+    color: "#10b981"
+    projects:
+      - id: market-tracker-backend
+        name: Market Tracker Backend
+        repo: FG-CollectLabs/market-tracker-backend
+        description: >
+          OLTP layer and HTTP API for the TCG market tracker. Owns product catalog,
+          weekly market snapshots, graded card data, and public/admin endpoints.
+        stack: ["Go", "PostgreSQL", "BigQuery", "GCS", "sqlc", "goose"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: sellthrough-analyzer
+        name: Sell-Through Analyzer
+        repo: FG-CollectLabs/sellthrough-analyzer
+        description: >
+          Tracks sealed TCG product across TCGPlayer, eBay, and retailers.
+          Produces sell-through metrics and inventory velocity for LLM-driven price prediction.
+        stack: ["Python", "Polars", "DuckDB", "BigQuery", "Streamlit", "GitHub Actions"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: ev-calculator
+        name: EV Calculator
+        repo: FG-CollectLabs/ev-calculator
+        description: >
+          Prices every constituent single in a sealed TCG product against market-tracker,
+          applies fees, and determines box ROI. CLI and HTTP API.
+        stack: ["Go", "YAML", "market-tracker API"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: card-identifier-backend
+        name: Card Identifier Backend
+        repo: FG-CollectLabs/card-identifier-backend
+        description: >
+          Go API that identifies TCG card images via pHash matching with OCR fallback.
+          Returns metadata and pricing from TCGPlayer, ManaPool, and eBay.
+        stack: ["Go", "PostgreSQL", "pHash", "TCGPlayer API", "eBay API"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: card-identifier-frontend
+        name: Card Identifier Frontend
+        repo: FG-CollectLabs/card-identifier-frontend
+        description: >
+          Drag-drop card scanning UI for card-identifier-backend.
+          Review matches, export eBay File Exchange CSV.
+        stack: ["TypeScript", "Vite", "localStorage"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: slab-cracker-frontend
+        name: Slab Cracker
+        repo: FG-CollectLabs/slab-cracker-frontend
+        description: >
+          Card centering measurement tool. Draw outer card and inner art frame,
+          calculates centering ratio and PSA grade ceiling.
+        stack: ["TypeScript", "Vite", "Canvas API", "Tesseract.js"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+  - name: FG-CollectShop
+    description: FutureGadgetLabs retail storefront and inventory system
+    color: "#f59e0b"
+    projects:
+      - id: fg-collect-core
+        name: Collect Core (API)
+        repo: FG-CollectShop/fg-collect-core
+        description: >
+          Backend core for FG-CollectShop inventory. Owns the data store,
+          inventory logic, and HTTP API serving the storefront and admin UI.
+        stack: ["Go", "PostgreSQL", "Stripe", "Firebase Auth", "GCS", "BigQuery"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: fg-collect-admin
+        name: Collect Admin UI
+        repo: FG-CollectShop/fg-collect-admin
+        description: >
+          Staff-only admin UI for FG-CollectShop day-to-day operations:
+          intake, bin assignment, pricing, pick/pack workflows.
+        stack: ["React", "TypeScript", "Vite", "TailwindCSS", "React Query"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+      - id: fg-collect-storefront
+        name: Collect Storefront
+        repo: FG-CollectShop/fg-collect-storefront
+        description: >
+          Public-facing static storefront for FutureGadgetLabs retail brand.
+          Browse, filter, and purchase cards with Stripe checkout.
+        stack: ["Hugo", "GitHub Pages", "Stripe"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""
+
+  - name: FG-SlopShop
+    description: Automated content creation pipeline
+    color: "#ec4899"
+    projects:
+      - id: fg-hype-cycle-orchestrator
+        name: Hype Cycle Orchestrator
+        repo: FG-SlopShop/fg-hype-cycle-orchestrator
+        description: >
+          Master controller of the FG SlopShop content pipeline.
+          Triggers services in sequence, manages pipeline state,
+          and uploads final videos to YouTube as private drafts.
+        stack: ["Python", "FastAPI", "SQLite", "YouTube Data API", "MCP Server"]
+        status: active
+        stage: "Production"
+        health_url: ""
+        docs_url: ""

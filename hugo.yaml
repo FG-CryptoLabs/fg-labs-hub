@@ -1,0 +1,16 @@
+baseURL: "https://fg-cryptolabs.github.io/fg-labs-hub/"
+languageCode: "en-us"
+title: "FG Labs"
+theme: "fglabs"
+
+params:
+  description: "A hub for all FG Labs projects — DeFi, trading tools, collectibles, and content."
+  org_github: "https://github.com/FG-CryptoLabs"
+  health_check_workflow: "health-check.yml"
+
+disableKinds: ["taxonomy", "term"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

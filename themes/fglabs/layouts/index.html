@@ -1,0 +1,85 @@
+{{ define "main" }}
+{{ $data := site.Data.projects }}
+{{ $health := site.Data.health }}
+
+<section class="hero">
+  <h1>FG Labs Projects</h1>
+  <p class="hero-sub">{{ .Site.Params.description }}</p>
+  <div class="health-summary" id="health-summary">
+    <span class="health-dot loading"></span> Loading health status...
+  </div>
+</section>
+
+{{ range $data.orgs }}
+<section class="org-section">
+  <div class="org-header" style="--org-color: {{ .color }}">
+    <h2>{{ .name }}</h2>
+    <p>{{ .description }}</p>
+  </div>
+
+  <div class="project-grid">
+    {{ range .projects }}
+    {{ $proj := . }}
+    {{ $projHealth := index $health .id | default dict }}
+    <article class="project-card" data-project-id="{{ .id }}">
+      <div class="card-top">
+        <div class="card-title-row">
+          <h3>{{ .name }}</h3>
+          <span class="health-badge" data-project="{{ .id }}" title="Health status">
+            <span class="dot"></span>
+          </span>
+        </div>
+        <p class="card-description">{{ .description }}</p>
+      </div>
+
+      <div class="card-bottom">
+        <div class="stack-tags">
+          {{ range .stack }}
+          <span class="tag">{{ . }}</span>
+          {{ end }}
+        </div>
+
+        <div class="card-meta">
+          <span class="stage-badge">{{ .stage }}</span>
+          <div class="card-links">
+            {{ if .repo }}
+            <a href="https://github.com/{{ .repo }}" target="_blank" rel="noopener" class="btn-sm">
+              GitHub ↗
+            </a>
+            {{ end }}
+            {{ if .health_url }}
+            <a href="{{ .health_url }}" target="_blank" rel="noopener" class="btn-sm">
+              Status ↗
+            </a>
+            {{ end }}
+            {{ if .docs_url }}
+            <a href="{{ .docs_url }}" target="_blank" rel="noopener" class="btn-sm">
+              Docs ↗
+            </a>
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="ci-status" data-repo="{{ .repo }}">
+          <span class="ci-label">CI</span>
+          <img
+            src="https://github.com/{{ .repo }}/actions/workflows/ci.yml/badge.svg"
+            alt="CI status"
+            onerror="this.parentElement.style.display='none'"
+          >
+        </div>
+      </div>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+<section class="health-log-section">
+  <h2>Health Check Log</h2>
+  <p class="section-sub">Last run: <span id="health-last-run">—</span></p>
+  <div id="health-details" class="health-table-wrap">
+    <p class="loading-msg">Loading...</p>
+  </div>
+</section>
+{{ end }}

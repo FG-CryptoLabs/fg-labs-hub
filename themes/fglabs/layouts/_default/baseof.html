@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} — FG Labs</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <link rel="stylesheet" href="{{ "css/hub.css" | relURL }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ "/" | relURL }}" class="logo">FG Labs</a>
+      <nav>
+        <a href="{{ "/" | relURL }}">Projects</a>
+        <a href="{{ .Site.Params.org_github }}" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>FG Labs &mdash; {{ now.Format "2006" }}</span>
+      <span>Built with Hugo &middot; Deployed via GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="{{ "js/health.js" | relURL }}"></script>
+</body>
+</html>
