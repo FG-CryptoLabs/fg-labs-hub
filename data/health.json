@@ -1,4 +1,125 @@
 {
-  "run_at": null,
-  "results": []
+  "run_at": "2026-05-24T09:47:52.571562+00:00",
+  "results": [
+    {
+      "id": "pendle-analyzer",
+      "name": "Pendle Fixed APY Analyzer",
+      "repo": "FG-CryptoLabs/pendle-analyzer",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "fg-crypt-core",
+      "name": "FG Crypt Core",
+      "repo": "FG-CryptHub/fg-crypt-core",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "market-tracker-backend",
+      "name": "Market Tracker Backend",
+      "repo": "FG-CollectLabs/market-tracker-backend",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "sellthrough-analyzer",
+      "name": "Sell-Through Analyzer",
+      "repo": "FG-CollectLabs/sellthrough-analyzer",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "ev-calculator",
+      "name": "EV Calculator",
+      "repo": "FG-CollectLabs/ev-calculator",
+      "status": "ok",
+      "message": "All checks passed",
+      "last_commit_age_days": 0,
+      "open_issues": 0,
+      "last_ci_status": "success"
+    },
+    {
+      "id": "card-identifier-backend",
+      "name": "Card Identifier Backend",
+      "repo": "FG-CollectLabs/card-identifier-backend",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "card-identifier-frontend",
+      "name": "Card Identifier Frontend",
+      "repo": "FG-CollectLabs/card-identifier-frontend",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "slab-cracker-frontend",
+      "name": "Slab Cracker",
+      "repo": "FG-CollectLabs/slab-cracker-frontend",
+      "status": "ok",
+      "message": "All checks passed",
+      "last_commit_age_days": 4,
+      "open_issues": 0,
+      "last_ci_status": "success"
+    },
+    {
+      "id": "fg-collect-core",
+      "name": "Collect Core (API)",
+      "repo": "FG-CollectShop/fg-collect-core",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    },
+    {
+      "id": "fg-collect-admin",
+      "name": "Collect Admin UI",
+      "repo": "FG-CollectShop/fg-collect-admin",
+      "status": "warn",
+      "message": "CI failing",
+      "last_commit_age_days": 20,
+      "open_issues": 0,
+      "last_ci_status": "failure"
+    },
+    {
+      "id": "fg-collect-storefront",
+      "name": "Collect Storefront",
+      "repo": "FG-CollectShop/fg-collect-storefront",
+      "status": "warn",
+      "message": "CI failing",
+      "last_commit_age_days": 20,
+      "open_issues": 0,
+      "last_ci_status": "failure"
+    },
+    {
+      "id": "fg-hype-cycle-orchestrator",
+      "name": "Hype Cycle Orchestrator",
+      "repo": "FG-SlopShop/fg-hype-cycle-orchestrator",
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
+    }
+  ]
 }
