@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-08-31T15:39:46.044618+00:00",
+  "run_at": "2026-09-01T12:52:25.370298+00:00",
   "results": [
     {
       "id": "pendle-analyzer",
@@ -45,9 +45,9 @@
       "id": "ev-calculator",
       "name": "EV Calculator",
       "repo": "FG-CollectLabs/ev-calculator",
-      "status": "ok",
-      "message": "All checks passed",
-      "last_commit_age_days": 90,
+      "status": "warn",
+      "message": "No commits in 91 days",
+      "last_commit_age_days": 91,
       "open_issues": 0,
       "last_ci_status": "success"
     },
@@ -76,8 +76,8 @@
       "name": "Slab Cracker",
       "repo": "FG-CollectLabs/slab-cracker-frontend",
       "status": "warn",
-      "message": "No commits in 103 days",
-      "last_commit_age_days": 103,
+      "message": "No commits in 104 days",
+      "last_commit_age_days": 104,
       "open_issues": 0,
       "last_ci_status": "success"
     },
@@ -95,11 +95,11 @@
       "id": "fg-collect-admin",
       "name": "Collect Admin UI",
       "repo": "FG-CollectShop/fg-collect-admin",
-      "status": "ok",
-      "message": "All checks passed",
-      "last_commit_age_days": 10,
-      "open_issues": 0,
-      "last_ci_status": "success"
+      "status": "error",
+      "message": "Repository not accessible",
+      "last_commit_age_days": null,
+      "open_issues": null,
+      "last_ci_status": null
     },
     {
       "id": "fg-collect-storefront",
