@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-05T16:35:34.117021+00:00",
+  "run_at": "2026-10-06T14:35:00.163268+00:00",
   "results": [
     {
       "id": "pendle-analyzer",
@@ -76,8 +76,8 @@
       "name": "Slab Cracker",
       "repo": "FG-CollectLabs/slab-cracker-frontend",
       "status": "warn",
-      "message": "No commits in 138 days",
-      "last_commit_age_days": 138,
+      "message": "No commits in 139 days",
+      "last_commit_age_days": 139,
       "open_issues": 0,
       "last_ci_status": "success"
     },
