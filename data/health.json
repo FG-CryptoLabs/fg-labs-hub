@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-30T14:41:02.312407+00:00",
+  "run_at": "2026-10-31T14:00:57.144801+00:00",
   "results": [
     {
       "id": "pendle-analyzer",
@@ -46,8 +46,8 @@
       "name": "EV Calculator",
       "repo": "FG-CollectLabs/ev-calculator",
       "status": "warn",
-      "message": "No commits in 150 days",
-      "last_commit_age_days": 150,
+      "message": "No commits in 151 days",
+      "last_commit_age_days": 151,
       "open_issues": 0,
       "last_ci_status": "success"
     },
@@ -76,8 +76,8 @@
       "name": "Slab Cracker",
       "repo": "FG-CollectLabs/slab-cracker-frontend",
       "status": "warn",
-      "message": "No commits in 163 days",
-      "last_commit_age_days": 163,
+      "message": "No commits in 164 days",
+      "last_commit_age_days": 164,
       "open_issues": 0,
       "last_ci_status": "success"
     },
@@ -106,8 +106,8 @@
       "name": "Collect Storefront",
       "repo": "FG-CollectShop/fg-collect-storefront",
       "status": "warn",
-      "message": "No commits in 179 days",
-      "last_commit_age_days": 179,
+      "message": "No commits in 180 days",
+      "last_commit_age_days": 180,
       "open_issues": 0,
       "last_ci_status": "failure"
     },
